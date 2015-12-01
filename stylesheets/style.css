@@ -9,11 +9,13 @@ header{
   background-color: green;
   background-image: url(../images/background1.png);
   background-size: 100%;
+  background-position: center;
   padding: 0;
   margin: 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 nav{
   margin: auto;
@@ -67,11 +69,22 @@ padding-left: 13rem;
 }
 
 .flexbox-container > div {
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  max-width: 19rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+
 }
+
+/*.remedies-info{
+  min-width: 20rem;
+}
+
+.recipes-info{
+  min-width: 20rem;
+}*/
 
 .text {
   width: 30%;
@@ -127,7 +140,16 @@ h1{
   margin-right: auto;
 }
 
+.lemon {
+  display: none;
+}
+
+.arnica{
+  display:none;
+}
+
 .conclusion{
+  padding-top: 5rem;
   height: 52rem;
   background-image: url(../images/background3.png);
   background-size: 100%;
@@ -138,9 +160,20 @@ h1{
 
 .conclusion img{
   float: right;
-  padding-top: 12rem;
   padding-right: 3rem;
-  height: 38rem;
+  height: 60%;
+}
+
+.frosted{
+  background-color: rgba(255, 255, 255, .44);
+  width: 20rem;
+  padding-left: 1rem;
+  padding-bottom: .4rem;
+  margin-bottom: 1rem;
+}
+
+.frosted h3{
+  padding-top: 1rem;
 }
 
 a{
@@ -162,5 +195,22 @@ a:hover{
   }
   .flexbox-container > div {
     width: 50%;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+  }
+  .lemon {
+    display: inline-block;
+  }
+
+  .arnica{
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .flexbox-container > div {
+    padding-left: 0rem;
+    padding-right: 3rem;
+    min-width: 20rem;
   }
 }
