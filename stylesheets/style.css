@@ -6,8 +6,8 @@ body{
 
 header{
   height: 50rem;
-  background-color: green;
-  background-image: url(../images/background1.png);
+  background-color: black;
+  background-image: url("../images/background1.png");
   background-size: 100%;
   background-position: center;
   padding: 0;
@@ -26,7 +26,7 @@ nav ul{
   margin-top: 0;
 }
 
-nav li{
+.topbar li{
   list-style-type: none;
   position: relative;
   display: inline;
@@ -34,6 +34,8 @@ nav li{
   padding-left: 1rem;
   padding-right: 1rem;
   top: 2rem;
+  font-family: "museo-slab",serif;
+  font-size: 1.2rem;
 }
 
 .hero{
@@ -41,7 +43,7 @@ nav li{
   height: 25rem;
   width: 25rem;
   margin: 0 auto;
-  margin-top: 11rem;
+  margin-top: 10rem;
 }
 
 .hero img{
@@ -63,9 +65,21 @@ header h1{
 padding-left: 13rem;
 }
 
+.intro {
+  font-family: "museo-slab",serif;
+}
+
+
 .intro p{
   color: white;
   font-family: "ff-kava-web-pro",sans-serif;
+  max-width: 25rem;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
 }
 
 .flexbox-container > div {
@@ -115,21 +129,28 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.intro p{
+  letter-spacing: 0.02em;
+}
 .infoimages {
   text-align: center;
   padding-top: 3rem;
 }
 
-.infoimages > img{
+.info h2{
+  font-family: "museo-slab",serif;
+}
 
+.info p{
+  letter-spacing: 0.04em;
 }
 
 .info a{
-  background-color: grey;
+  background-color: #3F3F3F;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .info img {
@@ -150,7 +171,7 @@ h1{
 
 .conclusion{
   padding-top: 5rem;
-  height: 52rem;
+  height: 50rem;
   background-image: url(../images/background3.png);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -161,8 +182,10 @@ h1{
 .conclusion img{
   float: right;
   padding-right: 3rem;
-  height: 60%;
+  height: 62%;
 }
+
+
 
 .frosted{
   background-color: rgba(255, 255, 255, .44);
@@ -174,6 +197,7 @@ h1{
 
 .frosted h3{
   padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 a{
